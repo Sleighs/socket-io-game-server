@@ -1,4 +1,4 @@
-# socket-io-game-server
+# Socket io Game Server
 
 Game server demo with chat, game lobby and client list using node.js and socket.io
 
@@ -6,7 +6,7 @@ This project was forked from [socket.io](https://github.com/socketio/socket.io/t
 
 
 ***
-to install:
+To install:
 
 git clone https://github.com/sleighs/socket-io-game-server/
 
