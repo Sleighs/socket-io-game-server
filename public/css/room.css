@@ -1,0 +1,27 @@
+﻿/* Nav */
+.navbar {
+    width: 100%;
+}
+
+.navbar-brand {
+    font-family: 'Acme';
+}
+
+/* Table */
+#room-container {
+    background-color: darkslategray;
+    width: 100%;
+    height: 100%;
+}
+
+#room-table {
+    width: 61%;
+    height: 91vh;
+    background-color: darkturquoise;
+}
+
+#table-chat {
+    width: 38%;
+    height: 91vh;
+    border-left: black;
+}

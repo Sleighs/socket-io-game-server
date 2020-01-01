@@ -1,0 +1,392 @@
+/* Fix user-agent */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+html, input {
+  font-family:
+    "HelveticaNeue-Light",
+    "Helvetica Neue Light",
+    "Helvetica Neue",
+    Helvetica,
+    Arial,
+    "Lucida Grande",
+    sans-serif;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+#game-container {
+    width:100%;
+    height: 100%;
+    background-color: orangered;
+}
+
+/* Landing */
+#landing {
+    display: block;
+    margin: 1% auto;
+    background-color: gold;
+    height: 88vh;
+    width: 90vw;
+    border-radius: 5px;
+}
+
+#enter {
+    height: 100%;
+    width: 100%;
+    padding: 31% 31%;
+}
+
+#landing-title {
+    text-align: center;
+    color: aliceblue;
+    font-size: 5em;
+    font-weight: bold;
+    font-family: 'Acme', sans-serif;
+    text-shadow: 2px 2px 2px #CE5937;
+    letter-spacing: 1px;
+}
+
+/* Login Page */
+#login-form {
+    margin: auto;
+    width: 85%;
+    font-family: 'Bree Serif';
+    font-size: 1.3em;
+    margin-bottom: 6%;
+}
+#login-form.form-control {
+    display: inline-block;
+    margin: 2%;
+}
+#login-form h2,
+#registration-form h2 {
+    color: darkslategrey;
+    font-family: 'Acme';
+    text-shadow: 1px 1px 1px cadetblue;
+    font-size: 1.8em;
+}
+#registration-form {
+    margin: auto;
+    margin-top: 2%;
+    width: 85%;
+    font-family: 'Bree Serif';
+    font-size: 1.3em;
+    color: darkslategrey;
+    text-shadow: .5px .5px .5px cadetblue;
+}
+.sign-in-container {
+    width: 90%;
+    height: 80vh;
+    background-color: white;
+    border-radius: 5px;
+    margin: 1% auto;
+    padding: 3%;
+}
+.btn.submit {
+    background-color: darkred;
+    color: white;
+    text-shadow: .5px .5px .5px gold;
+    border-radius: 5px;
+    border: 1pt solid darkslategrey;
+}
+    .btn.submit:hover {
+        background-color: gold;
+        color: black;
+        border-radius: 5px;
+        text-shadow: .5px .5px .5px black;
+        border: 1pt solid darkred;
+    }
+/* How to Play */
+#rules  {
+    padding: 2%;
+    width: 85%;
+    margin: auto;
+}
+
+
+/* Table List */
+#table-list {
+    height: 90%;
+    width: 69%;
+}
+#table-list {
+    display: inline-block;
+}
+#tables-cont {
+    display: inline-block;
+}
+#table-setup {
+    display: none;
+    background-color: orangered;
+    height: 90%;
+    width: 69%;
+    padding: 6%;
+    color: white;
+    margin: auto;
+}
+
+#tables {
+    overflow-y: hidden;
+    
+    width: 100%;
+    margin: auto;
+    max-height: 83vh;
+}
+#tables::-webkit-scrollbar {
+    
+}
+    #tables:hover {
+        overflow: auto;
+        padding-right: 1px;
+    }
+.table-row-container {
+    margin: 1% auto;
+    height: 14vh;
+    width: 92%;
+    background-color: dodgerblue;
+    border-radius: 5px;
+    display: block;
+    color: white;
+    font-size: 1.7em;
+    text-shadow: 1px 1px 1px navy;
+    font-family: 'Righteous';
+        border: 4pt ridge darkslateblue;
+    box-shadow: 3px 2px 2px darkred;
+}
+.table-row-stat {
+    margin: 1%;
+    display: inline-block;
+    width: 30%;
+}
+    .table-row-stat h2 {
+        font-family: 'Acme';
+        font-size: 1.1em;
+        color: white;
+        text-shadow: 1px 1px 1px navy;
+    }
+
+    .table-row-stat span {
+        margin-left: 17%;
+    }
+.table-name {
+    font: 1.5em;
+    color: grey;
+}
+#create-table.btn,
+#login-to-play.btn {
+    margin: 1% 37%;
+    height: 5%;
+    width: 30%;
+    color: white;
+    font-size: 1.4em;
+    letter-spacing: 1px;
+    font-family: 'Acme', sans-serif;
+}
+#create-table.btn {
+    background-color: dodgerblue;
+    text-shadow: .5px .5px 1px navy;
+    box-shadow: 1px 1px 1px 1px navy;
+}
+
+/* Create Table Form */
+.createGame {
+    background-color: dodgerblue;
+    border-radius: 7px;
+    text-shadow: 1px 1px 3px #666666;
+    color: whitesmoke;
+    font-size: 1em;
+    padding: 6px 10px 5px 10px;
+    text-decoration: none;
+    font-family: 'Bree Serif';
+}
+#create-table-form {
+    color: white;
+    font-family: 'Bree Serif';
+}
+.table-setup-container {
+    font-family: 'Bree Serif';
+}
+#form-group1 .form-group {
+    display: inline-block;
+}
+
+#private-game-password-container {
+    display: none;
+}
+.createGame {
+    margin: auto;
+    width: 34%;
+    box-shadow: 2px 2px 2px navy;
+}
+.player-count-row {
+    display: inline-block;
+}
+#create-table-form.table {
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-collapse: collapse;
+    font-family: 'Bree Serif';
+}
+.table-head {
+    text-align: center;
+    font-size: 2em;
+}
+
+/* Lobby */
+#table-chat {
+    display: inline-block;
+    height: 93%;
+    width: 29%;
+    float: right;
+    background-color: aliceblue;
+    border-radius: 0px;
+    border-left: 3pt ridge orangered;
+}
+.pages {
+    height: 100%;
+    margin: 0;
+    padding: 1%;
+}
+.pages ul,
+.pages li {
+    list-style: none;
+    word-wrap: break-word;
+}
+
+.page {
+  height: 100%;
+  width: 100%;
+}
+.Users {
+    color: darkslategray;
+    width: 100%;
+    max-height: 25vh;
+    height: 100%;
+    margin-left: -5%;
+}
+.Users li {
+    width: 95%
+}
+#players-in-lobby {
+    color: black;
+    list-style-position: inside
+}
+.lobby-row {
+    font-size: 1em;
+}
+/* Player List*/
+#player-list {
+    height: 31%;
+    border-bottom: double 3pt white;
+}
+#player-list h2 {
+    font-size: 1em;
+    padding: 2%;
+    text-align: center;
+}
+/* Chat page */
+.chat {
+
+}
+.chat.page {
+  height: 60%;
+}
+.sendChat {
+    height: 6vh;
+    width: 6vh;
+    background-color: mintcream;
+    color: orangered;
+    float: right;
+    z-index: 2;
+    bottom: 3vh;
+    right: 2vh;
+    border-radius: 50%;
+    display: none;
+    position: fixed;
+}
+
+/* Room */
+#room-table {
+    height: 90%;
+    width: 69%;
+    display: inline-block;
+}
+/* Font */
+
+.messages {
+  font-size: 100%;
+  width: 100%;
+}
+
+.inputMessage {
+  font-size: 100%;
+  width: 90%;
+}
+
+.log {
+  color: gray;
+  font-size: 70%;
+  margin: 5px;
+  text-align: center;
+}
+
+/* Messages */
+
+.chatArea {
+  height: 100%;
+}
+
+.messages {
+  height: 100%;
+  margin: 0;
+  overflow-y: scroll;
+  padding: 5px 10px 5px 10px;
+}
+    .messages::-webkit-scrollbar {
+        
+        display: none;
+    }
+
+.message.typing .messageBody {
+  color: gray;
+}
+
+.username {
+  font-weight: 700;
+  overflow: hidden;
+  text-align: right;
+  padding: 2%;
+}
+
+/* Input */
+
+.inputMessage {
+  border: 1pt inset aliceblue;
+  border-radius: 5px;
+  bottom: 0;
+  height: 60px;
+  left: 0;
+  outline: none;
+  right: 0;
+  width: 100%;
+  padding: 0 3%; 
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    letter-spacing: -2px;
+}

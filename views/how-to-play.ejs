@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<% include ./includes/head %>
+
+<body>
+	<% if (!user) { %>
+<% include ./includes/nav %>
+<% } else {%>
+	<% include ./includes/nav-player %>
+<% } %>
+
+<div id="rules">
+	<h1>Overview</h1>
+	<p>At the beginning of the game, each player is secretly assigned one of three roles: <strong>Jouranlist</strong>, <strong>Activist</strong>, or <strong>Insurgent</strong>. The Journalists have a majority, but they don't know who anyone is; Activists must resort to secrecy and sabotage to accomplish their goals. The Insurgent plays for the Activist team from the outset, but the Insurgent doesn't know the Ativists and must work to figure them out.</p>
+
+	<p style="font-weight: bold">The Journalists win by publishing five News Stories or firing the insurgent. The Activists win by publishing six Propaganda Stories, or if the Insurgent is hired as Editor after three Propaganda Stories have been published.</p>
+
+	<p>Whenever a Propaganda Story is published, the insurgency becomes morepowerful, and the Editor is granted a single-use power which must be used before the next round can begin. It doesn't matter what team the Editor is on; in fact, even Journalists might be tempted to publish Propaganda Stories to gain new powers.</p>
+
+	<h1>Object</h1>
+	<p>Every player has a secret identity as a writer of either News or Propaganda.</p>
+
+	<p>Players on the News team wins if either:</p>
+	<ul>
+		<li> (Ten) News Stories are published.</li>
+		<li> The Insurgent is fired.</li>
+	</ul>
+	<p>Players on the Activist team win if either:</p>
+	<ul>
+		<li> 12 Propagana Stories are published</li>
+		<li> The Insurgent is chosen for the cover story after (6) Propaganda Stories are published</li>
+	</ul>
+</div>
+
+<% include ./includes/scripts %>
+</body>
+<% include ./includes/footer %>
+</html>

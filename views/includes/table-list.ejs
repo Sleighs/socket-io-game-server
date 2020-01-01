@@ -1,0 +1,16 @@
+<div id="table-list">
+  <div class="GameButtons">
+    <% if (user){ %>
+    <button id="create-table" class="btn" placeholder="Create Game">Create Game</button>
+    <% } else { %>
+    <button id="login-to-play" class="btn" placeholder="Log in to play" disabled="">Log in to play</button>
+    <% } %>
+  </div>
+  <div id="tables"></div>
+</div>
+  
+<div id='table-setup'>
+  <button id='close-game-setup'>X</button>
+  <% include ./table-setup %>
+</div>
+

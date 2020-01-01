@@ -1,0 +1,35 @@
+{
+  "name": "chat",
+  "version": "1.0.0",
+  "description": "game server made by Sleighs with ♥️",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sleighs",
+  "repository": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^3.0.5",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "browserify": "^16.5.0",
+    "connect-flash": "^0.1.1",
+    "ejs": "^2.6.1",
+    "ejs-locals": "^1.0.2",
+    "express": "^4.16.4",
+    "express-generator": "^4.16.0",
+    "express-messages": "^1.0.1",
+    "express-session": "^1.16.1",
+    "express-validator": "^5.3.1",
+    "jquery": "^3.3.1",
+    "jsdom": "^13.2.0",
+    "mongodb": "^3.1.13",
+    "mongoose": "^5.4.10",
+    "nodemon": "^1.18.9",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "passport.socket.io": "0.0.0",
+    "socket.io": "^1.5.1"
+  }
+}

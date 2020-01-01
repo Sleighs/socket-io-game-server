@@ -1,0 +1,52 @@
+<div class="table-setup-container">
+  <form id="create-table-form" method="POST" action="/tables/table-setup">
+    
+    <table id="create-table-form" class="table">
+      <thead class="table-head">
+        <td colspan="3">Create a new game</td>
+      </thead>
+      <tr>
+        <td colspan="3">
+          <input class="btn btn-primary createGame" type="button" value="Create Game"/>
+        </td>
+      </tr>
+      <tr class="form-group">
+        <td>
+          <label>Room Name:</label>
+          <input id="table-name-input"  name="name" type="text"/>
+        </td>  
+        <td>
+          <label>Private:</label>
+          <input class="form-control" id="private-game-input" name="private" type="checkbox"/>
+        </td>
+        <td>
+          <label>Unlisted:</label>
+          <input class="form-control" id="unlisted-game-input" name="unlisted" type="checkbox"/>
+        </td>
+      </tr>
+      <tr>
+        <td id="private-game-password-container" colspan="3">
+          <div class="form-group">
+            <label>Password:</label>
+            <input class="form-control" name="password" type="password"/>
+          </div>
+          <div class="form-group">
+            <label>Confirm Password:</label>
+            <input class="form-control" name="password2" type="password"/>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td id="form-group" colspan="3">
+          <label class="player-count-row" id="player-count-input">Players:</label>
+          <input class=" player-count-row"  type="radio" name="playerCount" value="5" checked="checked"/>5
+          <input class="player-count-row"  type="radio" name="playerCount" value="6"/>6
+          <input class="player-count-row"  type="radio" name="playerCount" value="7"/>7
+          <input class="player-count-row"  type="radio" name="playerCount" value="8"/>8
+          <input class="player-count-row"  type="radio" name="playerCount" value="9"/>9
+          <input class="player-count-row"  type="radio" name="playerCount" value="10"/>10
+        </td>
+      </tr>
+    </table>
+  </form>
+</div>
