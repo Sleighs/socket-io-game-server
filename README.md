@@ -1,4 +1,4 @@
-# Socket io Game Server
+# Socket.io Game Server
 
 Game server demo with chat, game lobby, client list and room creation using node.js and socket.io
 
