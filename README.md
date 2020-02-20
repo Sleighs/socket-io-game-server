@@ -2,7 +2,7 @@
 
 Game server demo with chat, game lobby, client list and room creation using node.js and socket.io
 
-This project was forked from [socket.io](https://github.com/socketio/socket.io/tree/master/examples/chat)'s github and used as a starting reference point.
+This project used [socket.io](https://github.com/socketio/socket.io/tree/master/examples/chat)'s github as a starting reference point.
 
 
 ***
