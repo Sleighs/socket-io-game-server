@@ -174,8 +174,11 @@ app.use('/users', users);
 let tables = require('./routes/tables');
 app.use('/tables', tables);
 
+
+
 // models
 let TableModel = require('./models/table');
+
 
 
 var lobby = [];
@@ -203,11 +206,10 @@ function getRoomList() {
     return list;
 }
 
+
 // Sockets
 
 io.on('connection', function (socket) {
-    
-
     //namespace
     var ns = url.parse(socket.handshake.url, true).query.ns;
     console.log('urlhost: ' + url);
