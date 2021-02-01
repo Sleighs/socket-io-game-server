@@ -1,12 +1,11 @@
-var express = require('express');
-var app = express();
+const express = require('express');
+const app = express();
 const router = express.Router();
-var server = require('http').createServer(app);
-var io = require('socket.io')(server);
-var port = process.env.PORT || 3000;
-var url = require('url');
-
-var fs = require('fs');
+const server = require('http').createServer(app);
+const io = require('socket.io')(server);
+const port = process.env.PORT || 3000;
+const url = require('url');
+const fs = require('fs');
 const EventEmitter = require('events');
 const path = require('path');
 const mongoose = require('mongoose');
@@ -20,13 +19,7 @@ const flash = require('connect-flash');
 const bodyParser = require('body-parser');
 const User = require('./models/user.js');
 
-var gameCol = {
-    totalGameCount: 0,
-    gameList: {},
-    namespaces: [],
-    currentRoom: 'lobby',
-    currentNamespace: ''
-};
+
 server.listen(port, function () {
     console.log('Server listening at port %d', port);
     fs.writeFile(__dirname + '/start.log', 'started');
@@ -182,6 +175,13 @@ let TableModel = require('./models/table');
 
 
 var lobby = [];
+var gameCol = {
+    totalGameCount: 0,
+    gameList: {},
+    namespaces: [],
+    currentRoom: 'lobby',
+    currentNamespace: ''
+};
 //var clients = io.of('/game').clients('lobby');
 
 var Table = function (host, gameId) {
@@ -443,24 +443,19 @@ io.on('connection', function (socket) {
         console.log(data);
     });
 
-    //socket on connect to table
-
-
     socket.emit('render lobby', { lobby: lobby, numGuests: numGuests });
-
-    socket.teststufy = '9 stuffs';
 });
 
 io.of('/game/table/test').on('connection', function (socket) {
-    /*var thingSchema = new mongoose.Schema({
+    var schema = new mongoose.Schema({
         name: String
     });
 
-    var ThingModel = mongoose.model('Test', thingSchema);
-
-    var thing1 = new ThingModel({
-        name: 'Thing1'
+    var newModel = mongoose.model('Test', schema);
+   
+    var model = new newModel({
+        name: 'item 1'
     });
-    console.log(thing1.name);*/
     
+    console.log(model.name);
 });
